@@ -1,0 +1,68 @@
+/* 공통 */
+body {
+	font size:10px;
+	min-width:320px;
+	}
+#header {
+	width:100%;
+	background:skyblue;
+	padding:10px 0 10px 0;
+	display:inline-block
+	}
+#header nav { _float:left }
+#header nav ul {
+	_float:left;
+	width:100%
+	}
+#header nav ul li {
+	float:left;
+	color:#fff;
+	text-align:center
+	}
+	#header label, #toggle{display:none}
+	
+/* 모바일 */
+@media screen and (min-width:0px) and (max-width:600px) {
+	#logo {display:none}
+	#toggle:checked + #nav{display:block}
+	#header label {
+		display:block;
+		text-align:center;
+		background: url('/css/img/menu.png');
+		background-repeat: no-repeat;
+		background-position:97% 10px;
+		background-size: 24px 19px;
+		font-size:20px;
+		font-weight:bold;
+		padding:4px 3%;
+	}
+	#header nav{width:100%}
+
+	#nav{display:none;}
+	#nav li{
+		display:block;
+		width:100%;
+		text-align:center;
+		padding: 4px;
+	}
+}
+
+/* PC */
+@media screen and (min-width:601px) {
+	#header label, #toggle{display:none}
+	#school {display:none}
+	#logo {
+		font-size:2em;
+		color:#fff;
+		margin-left:5%;
+		display:inline-block
+	}
+	#header nav {
+		float:right;
+		margin-top:5px
+	}
+	#header nav ul li {
+		width:100px;
+		font-size:1.3em
+	}
+}
